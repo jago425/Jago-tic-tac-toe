@@ -14,29 +14,35 @@
     <body class="container-fluid">
       <!-- header -->
       <h1>Jago's Tic Tac Toe</h1>
-      <!--- Sign Up -->
-      <section>
-        <form>
-          <legend>Sign Up</legend>
-          <input type="text" id="sign-up-email" name="credentials[email]" placeholder="email">
-          <input type="password" id="sign-up-password" name="credentials[password]" placeholder="Password">
-          <input type="password" id ="confirm-password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-        </form>
-      </section>
+      <!-- Status Message -->
+      <div id='status-message'></div>
       <!--- Login -->
       <section>
-        <form>
-          <legend>Login</legend>
+        <form id='sign-in'>
+          <fieldset>
           <input type="text" id="login-email" name="credentials[email]" placeholder="email">
-          <input type="password" id="login-password" name="credentials[password]" placeholder="Password">
+          <input type="text" id="login-password" name="credentials[password]" placeholder="Password">
+          <input type="submit" name="submit" class="btn btn-primary" value="Login">
+        </fieldset>
         </form>
       </section>
+      <!--- Sign Up -->
+        <form id='sign-up'>
+          <fieldset>
+            <legend>Sign Up</legend>
+            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="email">
+            <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
+            <input type="text" id ="confirm-password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+            <input type="submit" name="submit" class="btn btn-primary" value="Sign up!">
+          </fieldset>
+        </form>
+
       <!-- Game Board -->
-      <section class="game-board">
-        <div class="container">
+      <section class="game-and-logout-and-reset">
+        <div class="container" id='game-board'>
           <div class="row">
-            <div class="col-xs-4 box">0,0</div>
-            <div class="col-xs-4 box">0,1</div>
+            <div class="col-xs-4 box">00</div>
+            <div class="col-xs-4 box">01</div>
             <div class="col-xs-4 box">02</div>
           </div>
           <div class="row">
@@ -51,16 +57,21 @@
           </div>
         </div>
         <br>
-        <!-- Reset Game -->
-        <button type="button" class="btn btn-primary">New Game</button>
-      <!-- Logout -->
-        <button type="button" class="btn btn-seconday">Logout</button>
+      <!-- Reset Game and Logout -->
+      <form id='sign-out' class='logout'>
+        <button type="button" id="new-game" class="btn btn-primary new-game">New Game</button>
+        <input type="submit" name="submit" class="btn btn-secondary" value="Logout">
+      </form>
       </section>
-
-
-
-
-
-      <p></p>
+      <section>
+        <form id='change-password'>
+          <fieldset>
+          <legend>Change Password</legend>
+          <input type="text" id="change-password-old" name="passwords[old]" placeholder="Old Password">
+          <input type="password" id="change-password-new" name="passwords[new]" placeholder="New Password">
+          <input type="submit" name="submit" class="btn btn-primary" value="Change Password">
+        </fieldset>
+        </form>
+      </section>
     </body>
 </html>
