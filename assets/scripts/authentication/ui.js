@@ -19,7 +19,7 @@ const signInSuccess = function (response) {
   $('#new-game').show()
   $('#sign-out').show()
   $('#change-password').show()
-  $('#game-board').show()
+  $('#game-board').hide()
 }
 
 const signInFailure = function () {

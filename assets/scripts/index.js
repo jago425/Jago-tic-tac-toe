@@ -18,7 +18,7 @@ $(() => {
 })
 
 $(() => {
-  $('.cell').on('click', gameEvents.makeAGame) // whenever you make a click on an element with the class of cell, run the makeAGame function in the gameEvents variable which is the path to the file where the makeAGame function lives
+  $('.cell').on('click', gameEvents.eventHandler) // whenever you make a click on an element with the class of cell, run the makeAGame function in the gameEvents variable which is the path to the file where the makeAGame function lives
 })
 
 // $(() => {
