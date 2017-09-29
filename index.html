@@ -20,17 +20,18 @@
       <section>
         <form id='sign-in'>
           <fieldset>
-          <input type="text" id="login-email" name="credentials[email]" placeholder="email">
-          <input type="text" id="login-password" name="credentials[password]" placeholder="Password">
-          <input type="submit" name="submit" class="btn btn-primary" value="Login">
+            <legend>Welcome Back! Please login to start playing!</legend>
+            <input type="text" id="login-email" name="credentials[email]" placeholder="username">
+            <input type="text" id="login-password" name="credentials[password]" placeholder="Password">
+            <input type="submit" name="submit" class="btn btn-primary" value="Login">
         </fieldset>
         </form>
       </section>
       <!--- Sign Up -->
         <form id='sign-up'>
           <fieldset>
-            <legend>Sign Up</legend>
-            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="email">
+            <legend>First Time? Sign Up Here!</legend>
+            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="username">
             <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
             <input type="text" id ="confirm-password" name="credentials[password_confirmation]" placeholder="Confirm Password">
             <input type="submit" name="submit" class="btn btn-primary" value="Sign up!">
@@ -41,19 +42,19 @@
       <section class="game-and-logout-and-reset">
         <div class="container" id='game-board'>
           <div class="row">
-            <div class="col-xs-4 box">00</div>
-            <div class="col-xs-4 box">01</div>
-            <div class="col-xs-4 box">02</div>
+            <div class="col-xs-4 box cell" id="0"></div>
+            <div class="col-xs-4 box cell" id="1"></div>
+            <div class="col-xs-4 box cell" id="2"></div>
           </div>
           <div class="row">
-            <div class="col-xs-4 box">10</div>
-            <div class="col-xs-4 box">11</div>
-            <div class="col-xs-4 box">12</div>
+            <div class="col-xs-4 box cell" id="3"></div>
+            <div class="col-xs-4 box cell" id="4"></div>
+            <div class="col-xs-4 box cell" id="5"></div>
           </div>
           <div class="row">
-            <div class="col-xs-4 box">20</div>
-            <div class="col-xs-4 box">21</div>
-            <div class="col-xs-4 box">22</div>
+            <div class="col-xs-4 box cell" id="6"></div>
+            <div class="col-xs-4 box cell" id="7"></div>
+            <div class="col-xs-4 box cell" id="8"></div>
           </div>
         </div>
         <br>

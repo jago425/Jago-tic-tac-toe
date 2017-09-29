@@ -39,6 +39,10 @@ const signOutSuccess = function () {
   store.user = null
   $('#game-board').hide()
   $('#change-password').hide()
+  $('#new-game').hide()
+  $('#sign-out').hide()
+  $('#sign-in').show()
+  $('#sign-up').show()
 }
 
 const signOutFailure = function () {
