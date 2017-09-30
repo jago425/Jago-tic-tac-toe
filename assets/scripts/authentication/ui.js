@@ -20,6 +20,8 @@ const signInSuccess = function (response) {
   $('#sign-out').show()
   $('#change-password').show()
   $('#game-board').hide()
+  $('#game-history').show()
+  $('.nppi').val('')
 }
 
 const signInFailure = function () {
@@ -43,6 +45,8 @@ const signOutSuccess = function () {
   $('#sign-out').hide()
   $('#sign-in').show()
   $('#sign-up').show()
+  $('#game-history').hide()
+  $('#game-stats-message').text('')
 }
 
 const signOutFailure = function () {

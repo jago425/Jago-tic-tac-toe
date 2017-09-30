@@ -20,9 +20,9 @@
       <section>
         <form id='sign-in'>
           <fieldset>
-            <legend>Welcome Back! Please login to start playing!</legend>
-            <input type="text" id="login-email" name="credentials[email]" placeholder="username">
-            <input type="text" id="login-password" name="credentials[password]" placeholder="Password">
+            <legend>Please login to start playing!</legend>
+            <input type="text" id="login-email" name="credentials[email]" class="nppi" placeholder="username">
+            <input type="password" id="login-password" name="credentials[password]" class="nppi" placeholder="Password">
             <input type="submit" name="submit" class="btn btn-primary" value="Login">
         </fieldset>
         </form>
@@ -31,9 +31,9 @@
         <form id='sign-up'>
           <fieldset>
             <legend>First Time? Sign Up Here!</legend>
-            <input type="text" id="sign-up-email" name="credentials[email]" placeholder="username">
-            <input type="text" id="sign-up-password" name="credentials[password]" placeholder="Password">
-            <input type="text" id ="confirm-password" name="credentials[password_confirmation]" placeholder="Confirm Password">
+            <input type="text" id="sign-up-email" name="credentials[email]" class="nppi" placeholder="username">
+            <input type="password" id="sign-up-password" name="credentials[password]" class="nppi" placeholder="Password">
+            <input type="password" id ="confirm-password" name="credentials[password_confirmation]" class="nppi" placeholder="Confirm Password">
             <input type="submit" name="submit" class="btn btn-primary" value="Sign up!">
           </fieldset>
         </form>
@@ -64,12 +64,15 @@
         <input type="submit" name="submit" class="btn btn-secondary" value="Logout">
       </form>
       </section>
+      <br>
+        <button type="button" id="game-history" class="btn btn-primary new-game">Game History</button>
+        <p id="game-stats-message" class="game-stats"></p>
       <section>
         <form id='change-password'>
           <fieldset>
           <legend>Change Password</legend>
-          <input type="text" id="change-password-old" name="passwords[old]" placeholder="Old Password">
-          <input type="password" id="change-password-new" name="passwords[new]" placeholder="New Password">
+          <input type="text" id="change-password-old" name="passwords[old]" class="nppi" placeholder="Old Password">
+          <input type="password" id="change-password-new" name="passwords[new]" class="nppi" placeholder="New Password">
           <input type="submit" name="submit" class="btn btn-primary" value="Change Password">
         </fieldset>
         </form>

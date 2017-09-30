@@ -1,12 +1,14 @@
 const getFormFields = require(`../../../lib/get-form-fields`)
 const api = require('./api')
 const ui = require('./ui')
+const gameEvents = require('../game/events')
 
 const onPageLoad = function () {
   $('#new-game').hide()
   $('#sign-out').hide()
   $('#change-password').hide()
   $('#game-board').hide()
+  $('#game-history').hide()
 }
 
 const onSignUp = function (event) {
@@ -39,12 +41,13 @@ const onSignOut = function (event) {
     .then(ui.signOutSuccess)
     .catch(ui.signOutFailure)
 }
-
 const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
   $('#sign-in').on('submit', onSignIn)
   $('#change-password').on('submit', onChangePassword)
   $('#sign-out').on('submit', onSignOut)
+  $('#new-game').on('click', gameEvents.createGame)
+  $('#game-history').on('click', gameEvents.retrieveGames)
 }
 
 module.exports = {
