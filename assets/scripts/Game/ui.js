@@ -1,9 +1,9 @@
 const gameWon = function (player) {
-  $('#status-message').text(player + ' won')
+  $('#status-message').text(player + ' won the game!!!!')
   $('.cell').off()
 }
 const gameDraw = function () {
-  $('#status-message').text('It\'s a draw')
+  $('#status-message').text('It\'s a draw. Click "New Game" to try again!')
 }
 
 const createGameFailure = function () {
