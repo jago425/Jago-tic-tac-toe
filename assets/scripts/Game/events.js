@@ -43,10 +43,10 @@ const createGame = function () {
   api.newGame()
     .then(function (response) {
       store.game = response.game
-      console.log(store.game)
     })
     .catch(ui.createGameFailure)
   $('#game-board').show()
+  $('#game-stats-message').hide()
   $('.cell').on('click', eventHandler)
   $('.cell').text('')
   for (let i = 0; i < gameBoard.length; i++) {
