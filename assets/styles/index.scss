@@ -8,6 +8,10 @@ $align-content: center;
 $height: 80px;
 $margin: 30px;
 
+body {
+  background-color: #CDBFCB;
+  text-align: center;
+}
 
 .box {
   border: 1px solid $black;
@@ -16,9 +20,24 @@ $margin: 30px;
 
 .container {
   align-content: $align-content;
-  margin: $margin;
+  margin: auto;
 }
 
 .logout {
   display: inline-block;
+}
+
+.status {
+  font-size: 30px;
+  color: #615296
+}
+
+h1 {
+font-family: 'bookman';
+font-size: 45px;
+}
+
+.auth-form {
+  display: inline-block;
+  margin: 40px;
 }

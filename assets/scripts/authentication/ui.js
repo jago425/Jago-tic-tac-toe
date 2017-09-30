@@ -26,6 +26,7 @@ const signInSuccess = function (response) {
 
 const signInFailure = function () {
   $('#status-message').text('Login Failed')
+  $('.nppi').val('')
 }
 
 const changePasswordSuccess = function () {

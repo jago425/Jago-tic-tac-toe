@@ -14,11 +14,12 @@
     <body class="container-fluid">
       <!-- header -->
       <h1>Jago's Tic Tac Toe</h1>
+      <br>
       <!-- Status Message -->
-      <div id='status-message'></div>
+      <div id='status-message' class='status'></div>
+      <br>
       <!--- Login -->
-      <section>
-        <form id='sign-in'>
+        <form id='sign-in' class='auth-form'>
           <fieldset>
             <legend>Please login to start playing!</legend>
             <input type="text" id="login-email" name="credentials[email]" class="nppi" placeholder="username">
@@ -26,9 +27,8 @@
             <input type="submit" name="submit" class="btn btn-primary" value="Login">
         </fieldset>
         </form>
-      </section>
       <!--- Sign Up -->
-        <form id='sign-up'>
+        <form id='sign-up' class='auth-form'>
           <fieldset>
             <legend>First Time? Sign Up Here!</legend>
             <input type="text" id="sign-up-email" name="credentials[email]" class="nppi" placeholder="username">
@@ -61,7 +61,7 @@
       <!-- Reset Game and Logout -->
       <form id='sign-out' class='logout'>
         <button type="button" id="new-game" class="btn btn-primary new-game">New Game</button>
-        <input type="submit" name="submit" class="btn btn-secondary" value="Logout">
+        <input type="submit" name="submit" class="btn btn-primary" value="Logout">
       </form>
       </section>
       <br>
