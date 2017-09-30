@@ -46,7 +46,7 @@ const createGame = function () {
     })
     .catch(ui.createGameFailure)
   $('#game-board').show()
-  $('#game-stats-message').hide()
+  $('#game-stats-message').text('')
   $('.cell').on('click', eventHandler)
   $('.cell').text('')
   for (let i = 0; i < gameBoard.length; i++) {
