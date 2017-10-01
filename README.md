@@ -1,37 +1,27 @@
 
 # Tic Tac Toe
-
+* The assignment: Create a tic-tac-toe game
+* The challenge: Work with an API to allow users to authenticate and save their game stats
 ## Game Link
+https://jago425.github.io/Jago-tic-tac-toe/
 
 ## Technologies Used
+* JavaScript
+* jQuery
+* HTML
+* CSS
+* Bootstrap
 
 ## Development Process
-1. Wireframes
-2. User Stories
-3. Set up local repo
-3. Set up remote repo
-4. Test deploy
-5. Set up HTML
-6. Set up directories and files for game (modules)
-7. Interact with the DOM
-  1. Game Logic
-  2. Click Handlers
-  3. API requests (AJAX)
-  4. Events to trigger functions
-  5. Display (ui) rules
-8. Set up directories and files for Authentication (modules)
-  1. Sign-Up logic
-  2. Sign-in logic
-  3. click handlers
-  4. API requests (AJAX)
-  5. Events to trigger functions
-  6. Display (ui) rules
-9. Clean up
-  1. no console.log messages
-  2. no alerts
-## Unsolved Bugs and Possible Enhancements
+I started with the HTML to build out the authentication fields, buttons and the game board. Then I worked on the authentication JS and AJAX.  Once I had authentication complete, I started  working on the game logic.  The piece that took me the longest was figuring out how to create a click handler to work in the individual boxes of the tic-tac-toe board so I could then build my turn logic along with my win and draw logic.
 
-## Wireframes and User Stories
+Once the game logic was in place, I had to finally face getting the game to interact with the API.  It took a few hours (with some help) but once that was done, all I had left were some small fixes and updates.
+## Unsolved Bugs and Possible Enhancements
+* The page is pretty blah, right now.  It needs more styling
+* The page only returns number of games played, but could be updated to pull back other stats
+* Add a nav bar and move game buttons to the nav bar to give the page a cleaner look and feel
+* refactor to optimize page for mobile.
+## User Stories
 as a user ..
 GAME
 I want to be able to start a new game
@@ -55,3 +45,5 @@ when I login, my previous game shall not persist
 when I logout, my game shall be cleared from board
 After I login, I don't want to see the login or sign up fields anymore
 After I logout, I don't want to see the game anymore, just the sign-up and login fields
+### Wireframes
+https://drive.google.com/file/d/0B2kD4C7RUmLscDJYUnFWLW1aT1k/view?ths=true
