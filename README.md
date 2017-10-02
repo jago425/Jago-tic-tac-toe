@@ -33,7 +33,7 @@ GAME
 * I want to see whether my last turn was valid
 * After I finish a game, I want to be able to start a new game
 * I want to see my game data (my wins and losses and draws(maybe) and # of games played associated to my ID)
-*
+
 AUTHENTICATION
 * I need to be able to sign up
 * I need to be able to sign in
