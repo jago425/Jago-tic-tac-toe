@@ -29,7 +29,6 @@ const eventHandler = function (event) {
       turns++
       player = (turns % 2) === 1 ? 'X' : 'O'
     }
-    console.log(turns)
   }
 }
 // createGame function to generate a new board when the "New Game" button is clicked
