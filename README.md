@@ -23,27 +23,30 @@ Once the game logic was in place, I had to finally face getting the game to inte
 * refactor to optimize page for mobile.
 ## User Stories
 as a user ..
+
 GAME
-I want to be able to start a new game
-I want to interact with the game
-I want to be notified when I win
-I want to be notified when no one wins
-I want to be able to reset my game
-I want to see whether my last turn was valid
-After I finish a game, I want to be able to start a new game
-I want to see my game data (my wins and losses and draws(maybe) and # of games played associated to my ID)
+* I want to be able to start a new game
+* I want to interact with the game
+* I want to be notified when I win
+* I want to be notified when no one wins
+* I want to be able to reset my game
+* I want to see whether my last turn was valid
+* After I finish a game, I want to be able to start a new game
+* I want to see my game data (my wins and losses and draws(maybe) and # of games played associated to my ID)
+*
 AUTHENTICATION
-I need to be able to sign up
-I need to be able to sign in
-I need to be able sign out
-I need to be able to change password
-I need to see feedback whether my authentication process was a success or a failure
-I don't want to be able to create multiple accounts with the same username
-I want to be alerted if I try to signup with a username that I already registered with
+* I need to be able to sign up
+* I need to be able to sign in
+* I need to be able sign out
+* I need to be able to change password
+* I need to see feedback whether my authentication process was a success or a failure
+* I don't want to be able to create multiple accounts with the same username
+* I want to be alerted if I try to signup with a username that I already registered with
+
 SESSION STATE
-when I login, my previous game shall not persist
-when I logout, my game shall be cleared from board
-After I login, I don't want to see the login or sign up fields anymore
-After I logout, I don't want to see the game anymore, just the sign-up and login fields
+* when I login, my previous game shall not persist
+* when I logout, my game shall be cleared from board
+* After I login, I don't want to see the login or sign up fields anymore
+* After I logout, I don't want to see the game anymore, just the sign-up and login fields
 ### Wireframes
 https://drive.google.com/file/d/0B2kD4C7RUmLscDJYUnFWLW1aT1k/view?ths=true
