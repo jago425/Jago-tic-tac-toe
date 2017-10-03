@@ -11,7 +11,6 @@ const createGameFailure = function () {
 }
 
 const displayStats = function (data) {
-  console.log(data)
   $('#game-stats-message').text('You have played ' + data.games.length + ' games')
 }
 
